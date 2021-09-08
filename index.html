@@ -20,6 +20,7 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./styles/main-nav-sprites.css" />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
@@ -27,10 +28,37 @@
     <div class="container-fluid">
       <div class="row header-bar">
         <div class="col-md-9"></div>
-        <div class="col-md-3">Right side settings button</div>
+        <div class="col-md-3 header-buttons">
+          <p id="mini-text">MINI of Raleigh</p>
+          <div class="header-icons">
+            <a href="#" id="help-icon" class="header-icon"><i></i></a>
+            <a href="#" id="settings-icon" class="header-icon"><i></i></a>
+          </div>
+        </div>
       </div>
-      <div class="row main-nav">
-        <div class="col-md-8">Main Nav</div>
+      <div class="row main-nav-bg">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 main-nav-icons">
+          <a href="#" id="dashboard-icon" class="main-nav-icon">
+            <i></i>
+          </a>
+          <a href="#" id="people-icon" class="main-nav-icon">
+            <i></i>
+          </a>
+          <a href="#" id="message-icon" class="main-nav-icon">
+            <i></i>
+          </a>
+          <a href="#" id="tag-icon" class="main-nav-icon">
+            <i></i>
+          </a>
+          <a href="#" id="post-icon" class="main-nav-icon">
+            <i></i>
+          </a>
+          <a href="#" id="chart-icon" class="main-nav-icon">
+            <i></i>
+          </a>
+        </div>
+        <div class="col-md-2"></div>
       </div>
     </div>
     <!-- Close of top nav container -->
@@ -42,7 +70,7 @@
         <div class="col-md-4 search-container">
           <form action="#">
             <input type="text" />
-            <button type="submit"><i class="fas fa-search"></i></button>
+            <a href="#"><i class="fas fa-search"></i></a>
           </form>
         </div>
       </div>
@@ -65,9 +93,9 @@
     <!-- Close of main container -->
     <div class="container-fluid">
       <div class="row footer">
-        <div class="col-md-3 green-box">Links</div>
-        <div class="col-md-6 blue-box">Notification</div>
-        <div class="col-md-3 green-box">Socials</div>
+        <div class="col-md-3">Links</div>
+        <div class="col-md-6">Notification</div>
+        <div class="col-md-3">Socials</div>
       </div>
     </div>
   </body>
