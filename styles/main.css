@@ -1,0 +1,81 @@
+.green-box {
+  background-color: green;
+}
+
+.blue-box {
+  background-color: blue;
+}
+
+.gray-box {
+  background-color: gray;
+}
+
+.light-border {
+  border-color: #eeeeee;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.header-bar {
+  background-image: linear-gradient(0deg, #1d85d9 0%, #2498f4 100%);
+  height: 45px;
+}
+
+.main-nav {
+  background-image: url("../images/menu-bg.png");
+  height: 108px;
+  background-position: center center;
+}
+
+.dash-search-bar {
+  background-color: #33cc66;
+  height: 75px;
+  border-radius: 5px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.dash-search-bar p {
+  color: white;
+  font-size: 30px;
+  float: center;
+}
+
+.search-container {
+  float: right;
+}
+
+.search-container button {
+  background: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.fa-search {
+  color: #2498f4;
+}
+
+.footer {
+  margin-top: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.main-exterior {
+  padding: 15px 25px 0px 25px;
+  position: relative;
+  background: linear-gradient(to bottom, #f6f6f6, white);
+  border-radius: 10px;
+  border-style: solid solid none solid;
+  border-width: 0.5px;
+  border-color: #e7e4e48a;
+}
+
+.main-interior {
+  background-color: white;
+  box-shadow: 0px 0px 2px rgb(161, 161, 161);
+}
