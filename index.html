@@ -20,7 +20,7 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./styles/main-nav-sprites.css" />
+    <link rel="stylesheet" href="./styles/sprites.css" />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
@@ -79,23 +79,275 @@
 
     <!-- Open main container -->
     <div class="container main-exterior">
-      <div class="row main-interior">
-        <div class="col-md-3 light-border"><p>Announcements</p></div>
-        <div class="col-md-7 light-border"><p>Announcements</p></div>
-        <div class="col-md-2 light-border"><p>Announcements</p></div>
-        <div class="col-md-4 gray-box">Tasks and recommendation</div>
-        <div class="col-md-8 green-box">Analytics</div>
-        <div class="col-md-4 blue-box">Images</div>
-        <div class="col-md-4 blue-box">Images</div>
-        <div class="col-md-4 blue-box">Images</div>
+      <div class="row main-interior main-icons">
+        <div class="col-md-3 light-border" id="ann-orange-text">
+          <p>ANNOUNCEMENTS</p>
+        </div>
+        <div class="col-md-8 light-border" id="ann-gray-text">
+          <p>
+            Sociis natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Vivamus sagittis lacus
+          </p>
+        </div>
+        <div class="col-md-1 light-border">
+          <a id="ann-arrows"><img src="./images/ann-arrows.png" alt="" /></a>
+        </div>
+        <div class="col-md-4 light-border">
+          <div class="row tasks-container">
+            <div id="tasks-header">
+              <p id="tasks-heading" class="blue-text">Tasks</p>
+              <a id="gray-settings"><i></i></a>
+            </div>
+
+            <div class="tasks-item border-bottom">
+              <div class="tasks-num-text">
+                <p class="task-num">1</p>
+                <p class="blue-text task-text">Welcome Contacts</p>
+              </div>
+              <a id="people-1"><i></i></a>
+            </div>
+            <div class="tasks-item border-bottom">
+              <div class="tasks-num-text">
+                <p class="task-num">2</p>
+                <p class="blue-text task-text">Provide Responses</p>
+              </div>
+              <a id="people-2"><i></i></a>
+            </div>
+            <div class="tasks-item border-bottom">
+              <div class="tasks-num-text">
+                <p class="task-num">3</p>
+                <p class="blue-text task-text">Review Activity</p>
+              </div>
+              <a id="people-3"><i></i></a>
+            </div>
+            <div class="tasks-item">
+              <div class="tasks-num-text">
+                <p class="task-num">4</p>
+                <p class="blue-text task-text">Reach Out</p>
+              </div>
+              <a id="people-4"><i></i></a>
+            </div>
+          </div>
+          <div class="row recs-container light-border">
+            <div id="recs-header">
+              <p id="recs-heading" class="blue-text">Recommendations</p>
+            </div>
+            <div class="recs-item dotted-border">
+              <a id="article-1"><i></i></a>
+              <div class="ctg-n-title">
+                <p class="ctg">Article</p>
+                <p class="title">7 Steps to getting more Fans</p>
+              </div>
+            </div>
+            <div class="recs-item dotted-border">
+              <a id="article-2"><i></i></a>
+              <div class="ctg-n-title">
+                <p class="ctg">Article</p>
+                <p class="title">Increase traction with more interactions</p>
+              </div>
+            </div>
+            <div class="recs-item dotted-border">
+              <a id="green-check"><i></i></a>
+              <div class="ctg-n-title">
+                <p class="ctg">Checklist</p>
+                <p class="title">Creating a Promotion</p>
+              </div>
+            </div>
+            <div class="recs-item dotted-border">
+              <a id="green-lightbulb"><i></i></a>
+              <div class="ctg-n-title">
+                <p class="ctg">Tip</p>
+                <p class="title">Share More</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="row analytics-container light-border">
+            <div id="analytics-heading"><p>Analytics</p></div>
+            <div id="data">
+              <div class="col-md-6">
+                <div id="data-left">
+                  <div id="title-dd">
+                    <p class="col-md-6" id="activity-text">ACTIVITY</p>
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-primary dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        6/28/11 - 07/21/11
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >07/22/11 - 8/27/11</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >08/28/11 - 9/21/11</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >09/22/11 - 10/27/11</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div id="chart-container">
+                    <a id="chart" href="#"><i></i></a>
+                  </div>
+                  <div id="social-checks">
+                    <!--Reference: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp-->
+                    <label class="ch-container" id="facebook"
+                      ><i></i>
+                      <input type="checkbox" checked="checked" />
+                      <span class="orng-cm"></span>
+                    </label>
+
+                    <label class="ch-container" checked="checked" id="twitter"
+                      ><i></i>
+                      <input type="checkbox" />
+                      <span class="orng-cm"></span>
+                    </label>
+
+                    <label class="ch-container" id="foursquare"
+                      ><i></i>
+                      <input type="checkbox" />
+                      <span class="orng-cm"></span>
+                    </label>
+
+                    <label class="ch-container" id="google"
+                      ><i></i>
+                      <input type="checkbox" />
+                      <span class="orng-cm"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div id="data-right">
+                  <img src="./images/analytics-spacer.png" alt="" />
+                  <div class="pies">
+                    <div class="pies-heading"><p>CHANNELS</p></div>
+                    <a id="pie-1" href="#"><i></i></a>
+                    <div class="pies-heading"><p>REFERRALS</p></div>
+                    <a id="pie-2" href="#"><i></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row person-charts-container light-border">
+            <div id="con-n-cus">
+              <div class="box-container">
+                <div class="box-bg">
+                  <div id="l-person">
+                    <img src="./images/green-person.png" alt="" />
+                  </div>
+                  <div id="l-banner">
+                    <div class="banner-text">
+                      <p class="big-text">75 CONTACTS</p>
+                      <br />
+                      <p class="small-text">4 INFLUENCERS</p>
+                    </div>
+                    <img src="./images/banner.png" alt="" />
+                  </div>
+                  <div id="l-chart">
+                    <img src="./images/green-chart.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="box-container">
+                <div class="box-bg">
+                  <div id="r-person">
+                    <img src="./images/orange-person.png" alt="" />
+                  </div>
+                  <div id="r-banner">
+                    <div class="banner-text">
+                      <p class="big-text">17 CUSTOMERS</p>
+                      <br />
+                      <p class="small-text">0 INFLUENCERS</p>
+                    </div>
+                    <img src="./images/banner.png" alt="" />
+                  </div>
+                  <div id="r-chart">
+                    <img src="./images/orange-chart.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row slider-container">
+            <div id="slider">
+              <a class="slider-arrow" id="s-arr-1" href="#"><i></i></a>
+              <p id="slider-p">
+                DID YOU KNOW? <br />
+                Maecenas sed diam eget risus varius blandit sit amet non magna.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                porta sem malesuada magna mollis euismod.
+              </p>
+              <a class="slider-arrow" id="s-arr-2" href="#"><i></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="row image-container">
+            <div class="col-md-4 space-bottom">
+              <div class="lower-img">
+                <img id="img-1" src="./images/img-1.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-4 space-bottom">
+              <div class="lower-img">
+                <img id="img-2" src="./images/img-2.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-4 space-bottom">
+              <div class="lower-img">
+                <img id="img-3" src="./images/img-3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Close of main container -->
+
     <div class="container-fluid">
-      <div class="row footer">
-        <div class="col-md-3">Links</div>
-        <div class="col-md-6">Notification</div>
-        <div class="col-md-3">Socials</div>
+      <div class="row footer main-icons">
+        <div class="col-md-3 links light-border">
+          <p>Tutorials</p>
+          <img src="./images/footer-spacer.png" alt="" />
+          <p>Support</p>
+          <img src="./images/footer-spacer.png" alt="" />
+          <p>Blog</p>
+        </div>
+        <div class="col-md-6 notification">
+          <p>
+            <span>Ariel Winter</span> likes your
+            <span>Win A Cooper Sweepstakes</span> Promotion
+          </p>
+          <a id="footer-pull" href="#"><i></i></a>
+        </div>
+        <div class="col-md-3 accounts light-border">
+          <div id="account-info">
+            <a id="pp" href="#"><i></i></a>
+            <p>Logout</p>
+          </div>
+          <div id="footer-socials">
+            <a id="f-socials" href="#"><i></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
